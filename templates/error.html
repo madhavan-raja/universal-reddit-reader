@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Reddit Reader Error</title>
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon"/>
+    </head>
+    <body>
+        <div class='title'>
+            <h1><a href='{{ url_for("home") }}'>Reddit Reader</a>: Error</h1>
+        </div>
+
+        <div class='content'>
+            There was an error reaching the subreddit.
+        </div>
+    </body>
+</html>

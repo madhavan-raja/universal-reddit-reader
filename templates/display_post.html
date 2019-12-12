@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Reddit Reader for r/{{ sub }}</title>
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon"/>
+    </head>
+    <body>
+        <div class='title'>
+            <h1><a href='{{ url_for("home") }}'>Reddit Reader</a>: r/{{ sub }}</h1>
+        </div>
+
+        <div class='content'>
+            <div class='title'>
+                <h1>{{ title }}</h1>
+                <p><a href="{{ url }}" target="_blank">🔗</a> By u/{{ author }} [{{ upvote_ratio }}% upvoted]</p>
+            </div>
+
+            <div class='body'>
+                {% autoescape false %}
+                    {{ body }}
+                {% endautoescape %}
+            </div>
+        </div>
+    </body>
+</html>

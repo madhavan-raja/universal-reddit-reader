@@ -1,0 +1,44 @@
+body
+{
+    background-color: black;
+    font-family: 'Inconsolata', 'Source Code Pro', 'Courier New';
+    padding: 80px;
+    color: blanchedalmond;
+    -ms-overflow-style: none;
+}
+
+input
+{
+    background-color: black;
+    font-family: 'Inconsolata', 'Source Code Pro', 'Courier New';
+    font-size: larger;
+    color: blanchedalmond;
+    border-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.content
+{
+    padding-top: 30px;
+}
+
+.body
+{
+    padding-top: 20px;
+    font-size: larger;
+    text-align: justify;
+}
+
+a
+{
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
