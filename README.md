@@ -2,7 +2,7 @@
 Reads a random Reddit post from a given subreddit
 
 ## Starting the application
-This application is built using Python 3.8
+This application is built with Python using Flask
 1. Install the required dependencies using the following command:
   ```
   pip install -r requirements.txt
